@@ -8,11 +8,13 @@
     {% tailwind_css %}
 </head>
 <body>
-   <main class="font-roboto relative w-full h-full">
+   <main class="flex min-h-screen flex-col font-roboto relative w-full h-full antialiased">
     {% include 'navbar.html' %}
-    {% block content %}
-    {% endblock %}
-    <footer></footer>
+    <div class="flex-1 w-full h-full">
+        {% block content %}
+        {% endblock %}
+    </div>
+    {% include 'footer.html'%}
    </main>
 </body>
 </html>
