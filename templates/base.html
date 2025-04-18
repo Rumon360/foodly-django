@@ -8,9 +8,9 @@
     {% tailwind_css %}
 </head>
 <body>
-   <main class="flex min-h-screen flex-col font-roboto relative w-full h-full antialiased">
+   <main class="flex min-h-screen flex-col font-roboto relative max-w-screen-[2500px] mx-auto w-full h-full antialiased">
     {% include 'navbar.html' %}
-    <div class="flex-1 w-full h-full">
+    <div class="flex-1 w-full h-full py-10 px-6">
         {% block content %}
         {% endblock %}
     </div>
