@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    "jazzmin",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -44,6 +45,13 @@ INSTALLED_APPS = [
 
 TAILWIND_APP_NAME = "theme"
 NPM_BIN_PATH = r"C:\Program Files\nodejs\npm.cmd"
+
+JAZZMIN_SETTINGS = {
+    "site_title": "Foodly Admin",
+    "site_header": "Foodly",
+    "site_brand": "Foodly",
+    "welcome_sign": "Welcome to the Foodly",
+}
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
