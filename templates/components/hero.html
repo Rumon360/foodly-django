@@ -1,0 +1,41 @@
+{% load static tailwind_tags %}
+
+<section class="hero py-24 bg-gradient-to-b from-white to-violet-200">
+  <div class="hero-content flex-col text-center">
+    <!-- Logo / Title -->
+    <h1 class="text-4xl lg:text-5xl font-extrabold text-gray-800 mb-4 drop-shadow-md">
+        Craving Something Delicious?
+    </h1>
+
+    <!-- Subtitle -->
+    <p class="text-lg lg:text-xl text-gray-600 mb-8 max-w-xl mx-auto">
+        Discover top-rated restaurants near you and get your favorite meals delivered fast with Foodly.
+    </p>
+
+    <!-- Search Form -->
+    <form method="GET"  class="w-full card bg-white rounded-xl p-6 flex flex-col md:flex-row gap-4 items-center">
+      <input
+        type="text"
+        name="restaurant_name"
+        placeholder="Restaurant name"
+       class="input"
+      />
+      <input
+        type="text"
+        name="location"
+        placeholder="Location"
+       class="input"
+      />
+      <button class="btn">
+        <svg class="size-[1.2em]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <g stroke-linejoin="round" stroke-linecap="round" stroke-width="2.5" fill="none" stroke="currentColor">
+              <circle cx="11" cy="11" r="8"></circle>
+              <path d="m21 21-4.3-4.3"></path>
+            </g>
+          </svg>
+        Search
+      </button>
+      
+    </form>
+  </div>
+</section>

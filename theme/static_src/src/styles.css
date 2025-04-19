@@ -1,8 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import "tailwindcss";
 @plugin "daisyui" {
-  themes: light --default, dark --prefersdark, dark;
+  themes: light --default, dark --prefersdark, light;
 }
+@plugin 'tailwind-scrollbar';
+
 @theme {
   --font-roboto: "Roboto", sans-serif;
 }

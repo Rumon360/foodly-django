@@ -3,5 +3,112 @@
 {% block title %}Foodly{% endblock %}
 
 {% block content %}
-<h1 class="text-4xl">Hello World!</h1>
+<div>
+    {% include "components/hero.html" %}
+    <section class="px-6 py-10 w-full">
+        <h2 class="font-semibold text-2xl mb-1">Top Restaurants</h2>
+        <p class="text-lg text-gray-600">Explore restaurants in your area</p>
+        <div id="top-restaurants" class="overflow-x-auto scrollbar scrollbar-thin scrollbar-track-bg-white whitespace-nowrap space-x-6 py-6 scroll-smooth snap-x snap-mandatory">
+            <!-- Card 1 -->
+            <div class="inline-block snap-start card bg-base-100 w-96 shadow-sm">
+              <figure>
+                <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes" />
+              </figure>
+              <div class="card-body overflow-hidden">
+                <h2 class="card-title">Card Title</h2>
+                <p class="break-words whitespace-normal">
+                  A card component has a figure, a body part, and inside body there are title and actions parts.
+                </p>
+              </div>
+            </div>
+          
+            <!-- Card 2 -->
+            <div class="inline-block snap-start card bg-base-100 w-96 shadow-sm">
+              <figure>
+                <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes" />
+              </figure>
+              <div class="card-body overflow-hidden">
+                <h2 class="card-title">Another Title</h2>
+                <p class="break-words whitespace-normal">
+                  This is another description with slightly more text to ensure wrapping behaves nicely in all screen sizes.
+                </p>
+              </div>
+            </div>
+          
+            <!-- Card 3 -->
+            <div class="inline-block snap-start card bg-base-100 w-96 shadow-sm">
+              <figure>
+                <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes" />
+              </figure>
+              <div class="card-body overflow-hidden">
+                <h2 class="card-title">Yet Another Title</h2>
+                <p class="break-words whitespace-normal">
+                  Even more content here. We can test what happens when this paragraph gets a little bit longer and wraps onto a second line.
+                </p>
+              </div>
+            </div>
+          
+            <!-- Card 4 -->
+            <div class="inline-block snap-start card bg-base-100 w-96 shadow-sm">
+              <figure>
+                <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes" />
+              </figure>
+              <div class="card-body overflow-hidden">
+                <h2 class="card-title">Final Card</h2>
+                <p class="break-words whitespace-normal">
+                  Short and sweet description to wrap up the carousel. Everything should stay neatly inside the card body.
+                </p>
+              </div>
+            </div>
+            <!-- Card 5 -->
+            <div class="inline-block snap-start card bg-base-100 w-96 shadow-sm">
+                <figure>
+                  <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes" />
+                </figure>
+                <div class="card-body overflow-hidden">
+                  <h2 class="card-title">Final Card</h2>
+                  <p class="break-words whitespace-normal">
+                    Short and sweet description to wrap up the carousel. Everything should stay neatly inside the card body.
+                  </p>
+                </div>
+              </div>
+          </div>
+    </section>
+    <section class="px-6 py-10 w-full">
+      <h2 class="font-semibold text-2xl mb-1">Choose From Most Popular Restaurants</h2>
+      <p class="text-lg text-gray-600">Explore the top restaurants in your area</p>
+      <div id="top-restaurants" class="overflow-x-auto scrollbar scrollbar-thin scrollbar-track-bg-white whitespace-nowrap space-x-6 py-6 scroll-smooth snap-x snap-mandatory">
+          <!-- Card 1 -->
+          <div class="inline-block snap-start card bg-base-100 w-96 shadow-sm">
+            <div class="w-full relative">
+              <figure>
+                <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" alt="Shoes" />
+              </figure>
+              <div class="badge absolute top-4 left-4">Open</div>
+            </div>
+            <div class="card-body overflow-hidden">
+              <h2 class="card-title">KFC</h2>
+          
+              <!-- Rating with reviews -->
+              <div class="flex items-center gap-2 mb-2 text-sm text-gray-600">
+                ⭐⭐⭐⭐
+                <span class="font-semibold">4.5</span>
+                <span class="text-gray-400">(320 reviews)</span>
+              </div>
+          
+              <!-- Food Types Badges -->
+              <div class="flex flex-wrap gap-2">
+                <div class="badge badge-outline">Fried Chicken</div>
+                <div class="badge badge-outline">Burgers</div>
+                <div class="badge badge-outline">Fries</div>
+              </div>
+            </div>
+          </div>
+          
+          
+          
+          
+      </div>
+  </section>
+</div>
 {% endblock %}
